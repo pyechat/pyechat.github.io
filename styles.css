@@ -3,31 +3,73 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
+    border-bottom: 3px solid #444;
+}
+
+.logo-container h1 {
+    margin: 0;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main {
     float: left;
     width: 70%;
-    padding: 30px 0;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .sidebar {
     float: right;
     width: 30%;
-    padding: 30px 0;
+    padding: 30px;
     background-color: #333;
     color: #fff;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a button:hover {
+    background-color: #eee;
+}
+
+.screenshot {
+    width: 100%; /* adjust this value as needed */
+    height: auto;
 }
